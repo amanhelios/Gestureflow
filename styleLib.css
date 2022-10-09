@@ -1,0 +1,75 @@
+.lib {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    background: url("BG/bg.jpg");
+    background-size: cover;
+
+    filter: brightness(80%);
+    height: 1000px;
+}
+
+.lib_content 
+{
+    border: solid white 2px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    font-weight: bolder;
+
+    margin-top: 50px;
+    margin-inline: 30px;
+    padding: 50px;
+
+    width: 300px;
+    height: 400px;
+
+    position: relative;
+    animation: mymove 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 200px;}
+    to {top: 0px;}
+  }
+
+
+.lib_content:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+}
+
+h3 
+{
+    color: white;
+}
+
+p 
+{
+    font-size: smaller;
+    font-weight: 100;
+}
+
+.link2con 
+{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(243, 156, 156);
+
+    text-align: end;
+}
+
+.link2con:hover 
+{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(86, 66, 122);
+
+    text-align: end;
+}
